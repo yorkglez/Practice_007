@@ -33,8 +33,10 @@ public class MainActivity extends AppCompatActivity {
                 image.getLayoutParams().height = (int)height;
                 image.getLayoutParams().width = (int)width;
                 image.requestLayout();
-                if (progress == seekBar.getMax()){
+                if (progress == seekBar.getMax())
                     Toast.makeText(getApplicationContext(),"Llego al limite",Toast.LENGTH_LONG).show();
+                else if(progress == 0) {
+                    Toast.makeText(getApplicationContext(), "Llego al minimo", Toast.LENGTH_LONG).show();
                 }
             }
 
