@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         image = (ImageView) findViewById(R.id.imageView);
         seekBar = (SeekBar) findViewById(R.id.seekBar2);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean b) {
                 float width = (progress + iWidth) * density / 160;
